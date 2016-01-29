@@ -1,0 +1,85 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+li {
+	list-style-type: none;
+}
+img {
+	border: none;
+}
+body{
+	background: #ecfaff;
+}
+.box {
+	width: 470px;
+	height: 150px;
+	margin:150px auto 0;
+	background: #ccc;
+	overflow: hidden;
+	position: relative;
+}
+.box ol {
+	position: absolute;
+	bottom: 2px;
+	left: 100px;
+	z-index: 2;
+}
+.box ol li {
+	width: 50px;
+	height: 10px;
+	background: #ccc;
+	margin-right: 6px;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+}
+.box ol li:hover {
+	background: #f60;
+	color: #fff;
+}
+.box ol li.active {
+	background: #f60;
+	color: #fff;
+}
+.box ol li span {
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 100%;
+	background: #360;
+}
+
+.box ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.box ul li,.box ul li img {
+	width: 470px;
+	height: 150px;
+	float: left;
+}
+
+.box p {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	top: 75px;
+	display: block;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	cursor: pointer;
+	z-index: 2;
+}
+.box .next {
+	right: 1px;
+}
+.box .prev {
+	left: 1px;
+}

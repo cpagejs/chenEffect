@@ -1,0 +1,95 @@
+*{margin:0px; padding:0px;}
+li {list-style: none;}
+#pro-show {
+	display: block;
+	width: 360px;
+	height: 410px;
+	margin: 160px 300px;
+	position: relative;
+}
+#show-left {
+	width: 360px;
+	height: 360px;
+	border: 1px solid #ccc;
+}
+#show-move {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 80px;
+	background: #f60;
+	opacity: 0.3;
+	filter:alpha(opacity=30);
+	display: none;
+}
+#show-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 360px;
+	height: 360px;
+	background: #fff;
+	opacity: 0;
+	filter:alpha(opacity=0);
+	cursor: move;
+}
+#show-btn {
+	width: 360px;
+	height: 52px;
+	margin-top: 10px;
+	position: relative;
+	overflow: hidden;
+}
+#show-small {
+	position: absolute;
+	top: 0px;
+	left: 14px;
+	width: 9000px;
+	height: auto;
+	z-index: 1;
+}
+#show-btn li {
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-right: 4px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+#show-btn li:hover {
+	border: 1px solid #f60;
+}
+#show-btn p {
+	position: absolute;
+	top: 0px;
+	display: none;
+	width: 10px;
+	height: 52px;
+	line-height: 50px;
+	background: #ccc;
+	color: #fff;
+	cursor: pointer;
+	z-index: 2;
+}
+#show-btn .show-prev {
+	left: 0px;
+}
+#show-btn .show-next {
+	right: 0px;
+}
+#show-right {
+	position: absolute;
+	top: 0px;
+	left: 380px;
+	width: 400px;
+	height: 380px;
+	border: 1px solid #757575;
+	overflow: hidden;
+	display: none;
+}
+#show-right img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
